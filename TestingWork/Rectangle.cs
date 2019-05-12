@@ -83,10 +83,10 @@ namespace TestingWork
         }
 
         // Implicit implementation of IFigure GetPerimeter.
-        public double GetPerimeter() => 2 * (X * Y);
+        public double GetPerimeter() => 2 * (X + Y);
 
         // Implicit implementation of IFigure GetSquare.
-        public double GetSquare() => Math.Pow(X + Y, 2);
+        public double GetSquare() => X * Y;
 
         // Overriden method ToString() for showing info about Rectangle.
         public override string ToString()
